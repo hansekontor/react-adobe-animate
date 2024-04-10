@@ -65,6 +65,7 @@ export const useSetupAdobe = ({
     const canvas = canvasRef.current as HTMLCanvasElement;
 
     const stage = new lib.Stage(canvas);
+    stage.scale = 0.8;
     stageRef.current = stage;
     const { properties: newProperties } = lib;
 
